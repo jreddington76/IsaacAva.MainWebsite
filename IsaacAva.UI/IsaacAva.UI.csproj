@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D89F654-703E-49A7-AB1A-AEAE62A35893}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IsaacAva.UI</RootNamespace>
+    <AssemblyName>IsaacAva.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\app.module.js" />
+    <Content Include="app\app.routes.js" />
+    <Content Include="app\assets\images\Brighton_fashion_week_logo.jpg" />
+    <Content Include="app\assets\images\collections\Black and White Short Set\isaac_ava_black_dogtooth_short_set_back.jpg" />
+    <Content Include="app\assets\images\collections\Black and White Short Set\isaac_ava_black_dogtooth_short_set_editorial_shot.jpg" />
+    <Content Include="app\assets\images\collections\Black and White Short Set\isaac_ava_black_dogtooth_short_set_editorial_shot_2.jpg" />
+    <Content Include="app\assets\images\collections\Black and White Short Set\isaac_ava_black_dogtooth_short_set_front.jpg" />
+    <Content Include="app\assets\images\collections\Black and White Short Set\isaac_ava_black_dogtooth_short_set_side.jpg" />
+    <Content Include="app\assets\images\collections\Black and White Short Set\isaac_ava_black_dogtooth_short_set_side_and_editorial_shot.jpg" />
+    <Content Include="app\assets\images\collections\Black Dip Hem Dress\isaac_ava_black_dip_hem_dress_1.jpg" />
+    <Content Include="app\assets\images\collections\Black Dip Hem Dress\isaac_ava_black_dip_hem_dress_2.jpg" />
+    <Content Include="app\assets\images\collections\Black Dip Hem Dress\isaac_ava_black_dip_hem_dress_3.jpg" />
+    <Content Include="app\assets\images\collections\Black Dip Hem Dress\isaac_ava_black_dip_hem_dress_4.jpg" />
+    <Content Include="app\assets\images\collections\Black Playsuit\isaac_ava_black_playsuit_1.jpg" />
+    <Content Include="app\assets\images\collections\Black Playsuit\isaac_ava_black_playsuit_2.jpg" />
+    <Content Include="app\assets\images\collections\Black Playsuit\isaac_ava_black_playsuit_3.jpg" />
+    <Content Include="app\assets\images\collections\Black Relaxed Jacket\isaac_ava_black_relaxed_1.jpg" />
+    <Content Include="app\assets\images\collections\Black Relaxed Jacket\isaac_ava_black_relaxed_2.jpg" />
+    <Content Include="app\assets\images\collections\Black Relaxed Jacket\isaac_ava_black_relaxed_3.jpg" />
+    <Content Include="app\assets\images\collections\Black Swing Dress\isaac_ava_black_swing_dress_1.jpg" />
+    <Content Include="app\assets\images\collections\Black Swing Dress\isaac_ava_black_swing_dress_2.jpg" />
+    <Content Include="app\assets\images\collections\Black Swing Dress\isaac_ava_black_swing_dress_3.jpg" />
+    <Content Include="app\assets\images\collections\Black Swing Dress\isaac_ava_black_swing_dress_4.jpg" />
+    <Content Include="app\assets\images\collections\Blue Co Ord Short Set\isaac_ava_blue_short_set_1.jpg" />
+    <Content Include="app\assets\images\collections\Blue Co Ord Short Set\isaac_ava_blue_short_set_2.jpg" />
+    <Content Include="app\assets\images\collections\Blue Co Ord Short Set\isaac_ava_blue_short_set_3.jpg" />
+    <Content Include="app\assets\images\collections\Blue Co Ord Short Set\isaac_ava_blue_short_set_4.jpg" />
+    <Content Include="app\assets\images\collections\Blue Cocoon Coat\isaac_ava_blue_cocoon_coat_1.jpg" />
+    <Content Include="app\assets\images\collections\Blue Cocoon Coat\isaac_ava_blue_cocoon_coat_3.jpg" />
+    <Content Include="app\assets\images\collections\Blue Cocoon Coat\isaac_ava_blue_cocoon_coat_2.jpg" />
+    <Content Include="app\assets\images\collections\Blue Dogtooth Cape\isaac_ava_blue_dogtooth_cape_1.jpg" />
+    <Content Include="app\assets\images\collections\Blue Dogtooth Cape\isaac_ava_blue_dogtooth_cape_2.jpg" />
+    <Content Include="app\assets\images\collections\Blue Dogtooth Cape\isaac_ava_blue_dogtooth_cape_3.jpg" />
+    <Content Include="app\assets\images\collections\Blue Jumpsuit\isaac_ava_blue_jumpsuit_back.jpg" />
+    <Content Include="app\assets\images\collections\Blue Jumpsuit\isaac_ava_blue_jumpsuit_front_1.jpg" />
+    <Content Include="app\assets\images\collections\Blue Jumpsuit\isaac_ava_blue_jumpsuit_front_2.jpg" />
+    <Content Include="app\assets\images\collections\Blue Jumpsuit\isaac_ava_blue_jumpsuit_side.jpg" />
+    <Content Include="app\assets\images\collections\Blue Swing Dress\isaac_ava_blue_swing_dress_1.jpg" />
+    <Content Include="app\assets\images\collections\Blue Swing Dress\isaac_ava_blue_swing_dress_2.jpg" />
+    <Content Include="app\assets\images\collections\Blue Swing Dress\isaac_ava_blue_swing_dress_3.jpg" />
+    <Content Include="app\assets\images\collections\Blue Swing Dress\isaac_ava_blue_swing_dress_4.jpg" />
+    <Content Include="app\assets\images\collections\Grey Split Back Top\isaac_ava_grey_split_back_top_1.jpg" />
+    <Content Include="app\assets\images\collections\Grey Split Back Top\isaac_ava_grey_split_back_top_2.jpg" />
+    <Content Include="app\assets\images\collections\Grey Split Back Top\isaac_ava_grey_split_back_top_3.jpg" />
+    <Content Include="app\assets\images\collections\Grey Swing Dress\isaac_ava_grey_swing_dress_back.jpg" />
+    <Content Include="app\assets\images\collections\Grey Swing Dress\isaac_ava_grey_swing_dress_front.jpg" />
+    <Content Include="app\assets\images\collections\White Jumpsuit\isaac_ava_white_jumpsuit_1.jpg" />
+    <Content Include="app\assets\images\collections\White Jumpsuit\isaac_ava_white_jumpsuit_2.jpg" />
+    <Content Include="app\assets\images\collections\White Jumpsuit\isaac_ava_white_jumpsuit_3.jpg" />
+    <Content Include="app\assets\images\collections\White Jumpsuit\isaac_ava_white_jumpsuit_4.jpg" />
+    <Content Include="app\assets\images\collections\White Sleeveless Jacket\isaac_ava_white_sleeveless_jacket_back_2.jpg" />
+    <Content Include="app\assets\images\collections\White Sleeveless Jacket\isaac_ava_white_sleeveless_jacket_side.jpg" />
+    <Content Include="app\assets\images\collections\White Sleeveless Jacket\isaac_ava_white_sleeveless_jacket_replacement.jpg" />
+    <Content Include="app\assets\images\events\1_Brighton_Fashion_Week.jpg" />
+    <Content Include="app\assets\images\events\2_Liverpool_Fashion_Week.jpg" />
+    <Content Include="app\assets\images\events\3_Battle_of_the_fashion_designers.jpg" />
+    <Content Include="app\assets\images\events\4_White_Cloth_Gallery_Fashion_Show_and_Art_Event.jpg" />
+    <Content Include="app\assets\images\homepage\Homepage_Carousel_A.jpg" />
+    <Content Include="app\assets\images\homepage\Homepage_Carousel_B.jpg" />
+    <Content Include="app\assets\images\homepage\homepage_carousel_c.jpg" />
+    <Content Include="app\assets\images\ISAAC_AVA_LOGO_BLACK.jpg" />
+    <Content Include="app\assets\images\Liverpool_fashion_week_logo.jpg" />
+    <Content Include="app\assets\images\lookbook\Isaac_Ava_Banner.jpg" />
+    <Content Include="app\assets\navs\nav.html" />
+    <Content Include="app\collection\collection.controller.js" />
+    <Content Include="app\collection\collection.html" />
+    <Content Include="app\collection\collection.service.js" />
+    <Content Include="app\contact\contact.html" />
+    <Content Include="app\events\events.controller.js" />
+    <Content Include="app\events\events.html" />
+    <Content Include="app\events\events.service.js" />
+    <Content Include="app\event\event.controller.js" />
+    <Content Include="app\event\event.html" />
+    <Content Include="app\event\event.service.js" />
+    <Content Include="app\home\home.controller.js" />
+    <Content Include="app\home\home.html" />
+    <Content Include="app\item\item.controller.js" />
+    <Content Include="app\item\item.html" />
+    <Content Include="app\item\item.service.js" />
+    <Content Include="app\journal\blog.html" />
+    <Content Include="app\journal\journal.html" />
+    <Content Include="app\lookbook\lookbook.html" />
+    <Content Include="app\press\press.html" />
+    <Content Include="app\story\story.html" />
+    <Content Include="scripts\angular-route.js" />
+    <Content Include="scripts\angular-route.min.js" />
+    <Content Include="scripts\angular.js" />
+    <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\angular.min.js.map" />
+    <Content Include="packages.config" />
+    <Content Include="scripts\angular-route.min.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\assets\images\logo.png" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\site.css" />
+    <Content Include="index.html" />
+    <Content Include="scripts\angular-mocks.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="versionhistory.txt" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51243</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51243/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

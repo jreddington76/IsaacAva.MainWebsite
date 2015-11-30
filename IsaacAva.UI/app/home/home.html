@@ -1,0 +1,83 @@
+﻿<div id="home" class="container">
+	<div class="row">
+		<div id="maincontent">
+			<div class="col-sm-6">
+				<div class="row col-sm-12">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FSSHQZjt0OM?rel=0&autoplay=0&loop=0&wmode=opaque" frameborder="0"></iframe>
+					</div>
+				</div>
+				<div class="row col-sm-12">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p7BOxpXVp5I?rel=0&autoplay=0&loop=0&wmode=opaque" frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-5 hidden-xs">
+				<div id="slides_control">
+					<div>
+						<carousel interval="vm.myInterval">
+							<slide ng-repeat="slide in vm.slides" active="slide.active">
+								<img ng-src="{{slide.image}}">
+								<!--<div class="carousel-caption">
+									<h4>Slide {{$index+1}}</h4>
+								</div>-->
+							</slide>
+						</carousel>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="sidebar" class="hidden-xs">
+			<div class="col-sm-1">
+				<ul>
+					<li><a href="http://www.facebook.com/IsaacAvaDesigns" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/Isaac_Ava" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://www.pinterest.com/fashionpony/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+					<li><a href="https://youtu.be/FSSHQZjt0OM" target="_blank"><i class="fa fa-youtube"></i></a></li>
+					<li><p id="showcasing">showcasing</p></li>
+					<li><p>at</p></li>
+					<li id="brightonlogo"><img src="app/assets/images/Brighton_fashion_week_logo.jpg" /></li>
+					<li id="liverpoollogo"><img src="app/assets/images/Liverpool_fashion_week_logo.jpg" /></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="social" class="visible-xs">
+		<div class="row">
+			<div class="col-xs-3">
+				<a href="http://www.facebook.com/IsaacAvaDesigns" target="_blank"><i class="fa fa-facebook"></i></a>
+			</div>
+			<div class="col-xs-3">
+				<a href="https://twitter.com/Isaac_Ava" target="_blank"><i class="fa fa-twitter"></i></a>
+			</div>
+			<div class="col-xs-3">
+				<a href="https://www.pinterest.com/fashionpony/" target="_blank"><i class="fa fa-pinterest"></i></a>
+			</div>
+			<div class="col-xs-3">
+				<a href="https://youtu.be/FSSHQZjt0OM" target="_blank"><i class="fa fa-youtube"></i></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<img src="app/assets/images/Brighton_fashion_week_logo.jpg" class="img-responsive" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<img src="app/assets/images/Liverpool_fashion_week_logo.jpg" class="img-responsive"/>
+			</div>
+		</div>
+			<!--<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li><p id="showcasing">showcasing</p></li>
+				<li><p>at</p></li>
+				<li id="brightonlogo"><img src="app/assets/images/Brighton_fashion_week_logo.jpg" /></li>
+				<li id="liverpoollogo"><img src="app/assets/images/Liverpool_fashion_week_logo.jpg" /></li>
+			</ul>-->
+		
+	</div>
+</div>
