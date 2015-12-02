@@ -126,6 +126,7 @@
     <Content Include="app\collection\collection.controller.js" />
     <Content Include="app\collection\collection.html" />
     <Content Include="app\collection\collection.service.js" />
+    <Content Include="app\collection\collection.specs.js" />
     <Content Include="app\contact\contact.html" />
     <Content Include="app\events\events.controller.js" />
     <Content Include="app\events\events.html" />
@@ -135,6 +136,7 @@
     <Content Include="app\event\event.service.js" />
     <Content Include="app\home\home.controller.js" />
     <Content Include="app\home\home.html" />
+    <Content Include="app\home\home.specs.js" />
     <Content Include="app\item\item.controller.js" />
     <Content Include="app\item\item.html" />
     <Content Include="app\item\item.service.js" />
@@ -165,6 +167,7 @@
     <Content Include="scripts\angular-mocks.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="SpecRunner.html" />
     <Content Include="versionhistory.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
