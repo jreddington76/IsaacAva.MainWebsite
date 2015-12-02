@@ -24,3 +24,7 @@ $RECYCLE.BIN/
 
 /packages/
 !packages/repositories.config
+bin
+obj
+*.user
+*.suo
