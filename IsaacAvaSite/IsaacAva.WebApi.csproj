@@ -282,9 +282,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{26246ebc-4544-4320-a1eb-a381ca6c05f7}</Project>
-      <Name>Domain</Name>
+    <ProjectReference Include="..\IsaacAvaWebsite.Domain\IsaacAvaWebsite.Domain.csproj">
+      <Project>{39dea3b9-9505-4e0b-9f12-b9228ee6e199}</Project>
+      <Name>IsaacAvaWebsite.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

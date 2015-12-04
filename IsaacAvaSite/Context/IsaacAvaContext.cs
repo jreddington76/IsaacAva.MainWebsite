@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using IsaacAva.Domain;
+using IsaacAvaWebsite.Domain;
 
 namespace IsaacAvaSite.Context
 {

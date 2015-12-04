@@ -152,9 +152,9 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj">
-      <Project>{26246ebc-4544-4320-a1eb-a381ca6c05f7}</Project>
-      <Name>Domain</Name>
+    <ProjectReference Include="..\IsaacAvaWebsite.Domain\IsaacAvaWebsite.Domain.csproj">
+      <Project>{39dea3b9-9505-4e0b-9f12-b9228ee6e199}</Project>
+      <Name>IsaacAvaWebsite.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\IsaacAvaWebsite.Services\IsaacAvaWebsite.Services.csproj">
       <Project>{254e9dbb-bf4b-45fe-b7a4-7e07705cc890}</Project>
