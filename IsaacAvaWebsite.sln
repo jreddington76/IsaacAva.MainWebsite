@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Services", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Domain", "IsaacAvaWebsite.Domain\IsaacAvaWebsite.Domain.csproj", "{39DEA3B9-9505-4E0B-9F12-B9228EE6E199}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaavAvaWebsite.UI", "IsaavAvaWebsite.UI\IsaavAvaWebsite.UI.csproj", "{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{39DEA3B9-9505-4E0B-9F12-B9228EE6E199}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39DEA3B9-9505-4E0B-9F12-B9228EE6E199}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39DEA3B9-9505-4E0B-9F12-B9228EE6E199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
