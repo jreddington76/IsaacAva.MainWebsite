@@ -5,7 +5,7 @@ using IsaacAvaWebsite.Services;
 
 namespace IsaacAvaWebsite.API.Controllers
 {
-	public class ProductController : ApiController
+	public class ProductsController : ApiController
 	{
 		private readonly IsaacAvaContext db = new IsaacAvaContext();
 
