@@ -18,6 +18,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Domain", "I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaavAvaWebsite.UI", "IsaavAvaWebsite.UI\IsaavAvaWebsite.UI.csproj", "{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{394F5F1C-B7B2-495C-8D65-1E5CB0ACB209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Services.Tests", "tests\IsaacAvaWebsite.Services.Tests\IsaacAvaWebsite.Services.Tests.csproj", "{64926BC3-B176-425B-9006-2A68ED535013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Interfaces", "IsaacAvaWebsite.Interfaces\IsaacAvaWebsite.Interfaces.csproj", "{69E499D8-68F8-4AE5-803B-76862DE80613}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,8 +46,19 @@ Global
 		{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64926BC3-B176-425B-9006-2A68ED535013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64926BC3-B176-425B-9006-2A68ED535013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64926BC3-B176-425B-9006-2A68ED535013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64926BC3-B176-425B-9006-2A68ED535013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69E499D8-68F8-4AE5-803B-76862DE80613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69E499D8-68F8-4AE5-803B-76862DE80613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69E499D8-68F8-4AE5-803B-76862DE80613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69E499D8-68F8-4AE5-803B-76862DE80613}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64926BC3-B176-425B-9006-2A68ED535013} = {394F5F1C-B7B2-495C-8D65-1E5CB0ACB209}
 	EndGlobalSection
 EndGlobal

@@ -2,7 +2,7 @@
 using System.Data.Entity.ModelConfiguration.Conventions;
 using IsaacAvaWebsite.Domain;
 
-namespace IsaacAvaWebsite.Services
+namespace IsaacAvaWebsite.Services.Context
 {
 	public class IsaacAvaContext : DbContext
 	{

@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Http;
 using IsaacAvaWebsite.Domain;
-using IsaacAvaWebsite.Services;
+using IsaacAvaWebsite.Services.Context;
 
 namespace IsaacAvaWebsite.API.Controllers
 {
