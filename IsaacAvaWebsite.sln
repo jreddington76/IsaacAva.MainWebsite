@@ -10,19 +10,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{210F24
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.API", "IsaacAvaWebsite.API\IsaacAvaWebsite.API.csproj", "{421CE4F2-3E0D-48CF-AFEA-CDD5E60C7593}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.API", "src\IsaacAvaWebsite.API\IsaacAvaWebsite.API.csproj", "{421CE4F2-3E0D-48CF-AFEA-CDD5E60C7593}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Services", "IsaacAvaWebsite.Services\IsaacAvaWebsite.Services.csproj", "{254E9DBB-BF4B-45FE-B7A4-7E07705CC890}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Services", "src\IsaacAvaWebsite.Services\IsaacAvaWebsite.Services.csproj", "{254E9DBB-BF4B-45FE-B7A4-7E07705CC890}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Domain", "IsaacAvaWebsite.Domain\IsaacAvaWebsite.Domain.csproj", "{39DEA3B9-9505-4E0B-9F12-B9228EE6E199}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Domain", "src\IsaacAvaWebsite.Domain\IsaacAvaWebsite.Domain.csproj", "{39DEA3B9-9505-4E0B-9F12-B9228EE6E199}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaavAvaWebsite.UI", "IsaavAvaWebsite.UI\IsaavAvaWebsite.UI.csproj", "{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaavAvaWebsite.UI", "src\IsaavAvaWebsite.UI\IsaavAvaWebsite.UI.csproj", "{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{394F5F1C-B7B2-495C-8D65-1E5CB0ACB209}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Services.Tests", "tests\IsaacAvaWebsite.Services.Tests\IsaacAvaWebsite.Services.Tests.csproj", "{64926BC3-B176-425B-9006-2A68ED535013}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Interfaces", "IsaacAvaWebsite.Interfaces\IsaacAvaWebsite.Interfaces.csproj", "{69E499D8-68F8-4AE5-803B-76862DE80613}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Interfaces", "src\IsaacAvaWebsite.Interfaces\IsaacAvaWebsite.Interfaces.csproj", "{69E499D8-68F8-4AE5-803B-76862DE80613}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{417803F3-C2B2-4287-A7AB-EE7D992D0DC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,11 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{421CE4F2-3E0D-48CF-AFEA-CDD5E60C7593} = {417803F3-C2B2-4287-A7AB-EE7D992D0DC3}
+		{254E9DBB-BF4B-45FE-B7A4-7E07705CC890} = {417803F3-C2B2-4287-A7AB-EE7D992D0DC3}
+		{39DEA3B9-9505-4E0B-9F12-B9228EE6E199} = {417803F3-C2B2-4287-A7AB-EE7D992D0DC3}
+		{045F2C99-FF7E-4A2F-BEC0-17C8DFA72537} = {417803F3-C2B2-4287-A7AB-EE7D992D0DC3}
 		{64926BC3-B176-425B-9006-2A68ED535013} = {394F5F1C-B7B2-495C-8D65-1E5CB0ACB209}
+		{69E499D8-68F8-4AE5-803B-76862DE80613} = {417803F3-C2B2-4287-A7AB-EE7D992D0DC3}
 	EndGlobalSection
 EndGlobal
