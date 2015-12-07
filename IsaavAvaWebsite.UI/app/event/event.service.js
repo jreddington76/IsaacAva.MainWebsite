@@ -1,11 +1,11 @@
-﻿(function () {
-	'use strict';
+﻿(function() {
+	"use strict";
 	angular
-		.module('app')
-		.service('EventService', EventService);
+		.module("app")
+		.service("EventService", EventService);
 
 	// $q and $timeout can be removed when Web API used
-	EventService.$inject = ['$http', '$q', '$timeout'];
+	EventService.$inject = ["$http", "$q", "$timeout"];
 
 	function EventService($http, $q, $timeout) {
 		this.getData = getData;
@@ -14,11 +14,11 @@
 		function getData(eventId) {
 			var deferred = $q.defer();
 
-			$timeout(function () {
+			$timeout(function() {
 				deferred.resolve({
-					name: 'Event 1',
+					name: "Event 1",
 					images: [
-                        { src: 'app/assets/images/isaac_ava_homepage_' + eventId + '.jpg' }
+						{ src: "app/assets/images/isaac_ava_homepage_" + eventId + ".jpg" }
 					]
 				});
 			}, 500);

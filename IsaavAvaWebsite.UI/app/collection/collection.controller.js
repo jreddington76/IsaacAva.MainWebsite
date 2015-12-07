@@ -1,11 +1,11 @@
-﻿(function () {
-	'use strict';
+﻿(function() {
+	"use strict";
 
 	angular
-        .module('app')
-        .controller('CollectionController', CollectionController);
+		.module("app")
+		.controller("CollectionController", CollectionController);
 
-	CollectionController.$inject = ['CollectionService'];
+	CollectionController.$inject = ["CollectionService"];
 
 	function CollectionController(collectionService) {
 		var vm = this;
@@ -16,7 +16,7 @@
 
 		function activate() {
 			collectionService.getData()
-				.then(function (data) {
+				.then(function(data) {
 					vm.collection = data;
 				});
 		}

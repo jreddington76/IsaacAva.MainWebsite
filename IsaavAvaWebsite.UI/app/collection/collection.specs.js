@@ -1,15 +1,15 @@
-﻿describe('collection', function () {
+﻿describe("collection", function() {
 
-	beforeEach(module('app'));
+	beforeEach(module("app"));
 
 	var controller;
 
-	beforeEach(inject(function ($controller) {
-		controller = $controller('CollectionController');
+	beforeEach(inject(function($controller) {
+		controller = $controller("CollectionController");
 	}));
 
-	describe('controller', function () {
-		it('should not be null', function () {
+	describe("controller", function() {
+		it("should not be null", function() {
 			expect(controller).not.toBe(null);
 		});
 	});

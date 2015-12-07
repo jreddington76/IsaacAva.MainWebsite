@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Web.Http;
 using IsaacAvaWebsite.API.Models;
 using Microsoft.AspNet.Identity;
@@ -63,7 +58,7 @@ namespace IsaacAvaWebsite.API.Controllers
 			{
 				if (result.Errors != null)
 				{
-					foreach (var error in result.Errors)
+					foreach(var error in result.Errors)
 					{
 						ModelState.AddModelError("", error);
 					}

@@ -1,11 +1,11 @@
-﻿(function () {
-	'use strict';
+﻿(function() {
+	"use strict";
 
 	angular
-        .module('app')
-        .controller('EventsController', EventsController);
+		.module("app")
+		.controller("EventsController", EventsController);
 
-	EventsController.$inject = ['EventsService'];
+	EventsController.$inject = ["EventsService"];
 
 	function EventsController(eventsService) {
 		var vm = this;
@@ -17,7 +17,7 @@
 		function activate() {
 
 			eventsService.getData()
-				.then(function (data) {
+				.then(function(data) {
 					vm.events = data;
 				});
 		}

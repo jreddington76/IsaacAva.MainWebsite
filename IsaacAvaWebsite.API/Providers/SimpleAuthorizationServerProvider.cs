@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
+﻿using System.Security.Claims;
 using System.Threading.Tasks;
-using System.Web;
 using Microsoft.Owin.Security.OAuth;
 
 namespace IsaacAvaWebsite.API.Providers
@@ -17,9 +13,9 @@ namespace IsaacAvaWebsite.API.Providers
 
 		public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
 		{
-			context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
+			context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] {"*"});
 
-			using (var repo = new AuthRepository())
+			using(var repo = new AuthRepository())
 			{
 				var user = await repo.FindUser(context.UserName, context.Password);
 

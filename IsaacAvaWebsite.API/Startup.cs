@@ -1,12 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Reflection;
 using System.Web.Http;
 using IsaacAvaWebsite.API;
 using IsaacAvaWebsite.API.Providers;
+using IsaacAvaWebsite.Interfaces;
+using IsaacAvaWebsite.Services;
 using Microsoft.Owin;
+using Microsoft.Owin.Cors;
 using Microsoft.Owin.Security.OAuth;
+using Ninject;
+using Ninject.Web.Common.OwinHost;
+using Ninject.Web.WebApi.OwinHost;
 using Owin;
 
 [assembly: OwinStartup(typeof(Startup))]
@@ -20,13 +24,14 @@ namespace IsaacAvaWebsite.API
 
 			var config = new HttpConfiguration();
 			WebApiConfig.Register(config);
-			app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
-			app.UseWebApi(config);
+			app.UseCors(CorsOptions.AllowAll);
+
+			app.UseNinjectMiddleware(CreateKernel).UseNinjectWebApi(config);
 		}
 
 		public void ConfigureOAuth(IAppBuilder app)
 		{
-			var oAuthServerOptions = new OAuthAuthorizationServerOptions()
+			var oAuthServerOptions = new OAuthAuthorizationServerOptions
 			{
 				AllowInsecureHttp = true,
 				TokenEndpointPath = new PathString("/token"),
@@ -37,6 +42,15 @@ namespace IsaacAvaWebsite.API
 			// Token Generation
 			app.UseOAuthAuthorizationServer(oAuthServerOptions);
 			app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
+		}
+
+		private static StandardKernel CreateKernel()
+		{
+			var kernel = new StandardKernel();
+			kernel.Load(Assembly.GetExecutingAssembly());
+
+			kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
+			return kernel;
 		}
 	}
 }

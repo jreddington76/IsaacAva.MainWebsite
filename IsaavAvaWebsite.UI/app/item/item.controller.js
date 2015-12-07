@@ -1,11 +1,11 @@
-﻿(function () {
-	'use strict';
+﻿(function() {
+	"use strict";
 
 	angular
-        .module('app')
-        .controller('ItemController', ItemController);
+		.module("app")
+		.controller("ItemController", ItemController);
 
-	ItemController.$inject = ['$routeParams', 'ItemService'];
+	ItemController.$inject = ["$routeParams", "ItemService"];
 
 	function ItemController($routeParams, itemService) {
 		var vm = this;
@@ -19,7 +19,7 @@
 		function activate() {
 
 			itemService.getData($routeParams.itemId)
-				.then(function (data) {
+				.then(function(data) {
 					vm.item = data;
 				});
 		}

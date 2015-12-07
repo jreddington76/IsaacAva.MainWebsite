@@ -1,8 +1,8 @@
-﻿(function () {
+﻿(function() {
 	"use strict";
-	angular.module('app', [
-		'ngRoute',
-        'ui.bootstrap',
-		'ngSanitize'
+	angular.module("app", [
+		"ngRoute",
+		"ui.bootstrap",
+		"ngSanitize"
 	]);
 })();
