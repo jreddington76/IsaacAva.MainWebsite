@@ -156,6 +156,10 @@
       <Project>{39dea3b9-9505-4e0b-9f12-b9228ee6e199}</Project>
       <Name>IsaacAvaWebsite.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\IsaacAvaWebsite.Interfaces\IsaacAvaWebsite.Interfaces.csproj">
+      <Project>{69e499d8-68f8-4ae5-803b-76862de80613}</Project>
+      <Name>IsaacAvaWebsite.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IsaacAvaWebsite.Services\IsaacAvaWebsite.Services.csproj">
       <Project>{254e9dbb-bf4b-45fe-b7a4-7e07705cc890}</Project>
       <Name>IsaacAvaWebsite.Services</Name>

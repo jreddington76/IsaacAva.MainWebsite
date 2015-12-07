@@ -1,23 +1,28 @@
-﻿using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 using IsaacAvaWebsite.Domain;
-using IsaacAvaWebsite.Services.Context;
+using IsaacAvaWebsite.Interfaces;
 
 namespace IsaacAvaWebsite.API.Controllers
 {
 	public class ProductsController : ApiController
 	{
-		private readonly IsaacAvaContext db = new IsaacAvaContext();
+		private readonly IUnitOfWork _unitOfWork;
+
+		public ProductsController(IUnitOfWork unitOfWork)
+		{
+			_unitOfWork = unitOfWork;
+		}
 
 		public IHttpActionResult Get()
 		{
-			return Ok(db.Products.ToList());
+			return Ok(_unitOfWork.ProductRepository().GetAll());
 		}
 
-		[Authorize(Roles="Administrators")]
+		[Authorize(Roles = "Administrators")]
 		public IHttpActionResult Post(Product product)
 		{
-			db.Products.Add(product);
+			_unitOfWork.ProductRepository().Add(product);
+			_unitOfWork.Save();
 			return Ok();
 		}
 	}
