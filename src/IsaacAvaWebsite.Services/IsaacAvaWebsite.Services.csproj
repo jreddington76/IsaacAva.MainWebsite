@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Context\IsaacAvaContext.cs" />
     <Compile Include="GenericRepository.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ProductMapper.cs" />
     <Compile Include="ProductRepository.cs" />
     <Compile Include="ProductService.cs" />

@@ -22,7 +22,7 @@ namespace IsaacAvaWebsite.API.Controllers
 			}
 			catch(Exception ex)
 			{
-				return BadRequest();
+				return BadRequest(ex.Message);
 			}
 		}
 

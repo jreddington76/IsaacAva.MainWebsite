@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="ProductServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProductMapperTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\IsaacAvaWebsite.Domain\IsaacAvaWebsite.Domain.csproj">
