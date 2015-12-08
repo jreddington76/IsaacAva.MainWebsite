@@ -50,6 +50,8 @@ namespace IsaacAvaWebsite.API
 			kernel.Load(Assembly.GetExecutingAssembly());
 
 			kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
+			kernel.Bind<IProductService>().To<ProductService>();
+			kernel.Bind<IProductMapper>().To<ProductMapper>();
 			return kernel;
 		}
 	}

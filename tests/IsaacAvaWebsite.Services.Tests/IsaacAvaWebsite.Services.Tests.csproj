@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -50,8 +53,25 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ProductServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\IsaacAvaWebsite.Domain\IsaacAvaWebsite.Domain.csproj">
+      <Project>{39dea3b9-9505-4e0b-9f12-b9228ee6e199}</Project>
+      <Name>IsaacAvaWebsite.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\IsaacAvaWebsite.Interfaces\IsaacAvaWebsite.Interfaces.csproj">
+      <Project>{69e499d8-68f8-4ae5-803b-76862de80613}</Project>
+      <Name>IsaacAvaWebsite.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\IsaacAvaWebsite.Services\IsaacAvaWebsite.Services.csproj">
+      <Project>{254e9dbb-bf4b-45fe-b7a4-7e07705cc890}</Project>
+      <Name>IsaacAvaWebsite.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

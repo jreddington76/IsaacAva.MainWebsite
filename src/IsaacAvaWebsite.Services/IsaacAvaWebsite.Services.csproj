@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DTO\ImageDto.cs" />
     <Compile Include="Context\IsaacAvaContext.cs" />
-    <Compile Include="DTO\ProductsDto.cs" />
     <Compile Include="GenericRepository.cs" />
+    <Compile Include="ProductMapper.cs" />
     <Compile Include="ProductRepository.cs" />
+    <Compile Include="ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>

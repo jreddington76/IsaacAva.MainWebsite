@@ -40,7 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IGenericRepository.cs" />
+    <Compile Include="IProductMapper.cs" />
     <Compile Include="IProductRepository.cs" />
+    <Compile Include="IProductService.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
