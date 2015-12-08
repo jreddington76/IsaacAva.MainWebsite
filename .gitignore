@@ -23,7 +23,9 @@ $RECYCLE.BIN/
 
 
 /packages/
-!packages/repositories.config
+
+#now using Automatic Package Restore so don't need repositories.config
+#!packages/repositories.config
 bin
 obj
 *.user
