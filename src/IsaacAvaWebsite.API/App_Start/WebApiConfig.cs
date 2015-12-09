@@ -14,7 +14,11 @@ namespace IsaacAvaWebsite.API
 			// Web API routes
 			config.MapHttpAttributeRoutes();
 
-			config.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{id}", new {id = RouteParameter.Optional}
+			// changed routing from default as web api has alias of api in iis
+			config.Routes.MapHttpRoute(
+				"DefaultApi",
+				"{controller}/{id}",
+				new {id = RouteParameter.Optional}
 				);
 
 			var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();

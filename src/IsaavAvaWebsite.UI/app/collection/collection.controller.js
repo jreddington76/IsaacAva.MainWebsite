@@ -5,20 +5,39 @@
 		.module("app")
 		.controller("CollectionController", CollectionController);
 
-	CollectionController.$inject = ["CollectionService"];
+	CollectionController.$inject = ["CollectionService","ThumbnailService"];
 
-	function CollectionController(collectionService) {
+	function CollectionController(collectionService, thumbnailService) {
 		var vm = this;
 
-		vm.collection = [];
+		vm.products = [];
+		vm.thumbnails = [];
 
 		activate();
 
 		function activate() {
-			collectionService.getData()
+			collectionService.getProducts()
 				.then(function(data) {
-					vm.collection = data;
+					vm.products = data;
+				});
+
+			thumbnailService.getThumbnails()
+				.then(function (data) {
+					vm.thumbnails = data;
 				});
 		}
+
+		// api 
+		//function activate() {
+		//	collectionService.getProducts()
+		//		.then(function (response) {
+		//			vm.products = response.data;
+		//		});
+
+		//	thumbnailService.getThumbnails()
+		//		.then(function (response) {
+		//			vm.thumbnails = response.data;
+		//		});
+		//}
 	}
 })();

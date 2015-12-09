@@ -2,7 +2,7 @@
 	<div class="row">
 		<section id="maincontent">
 			<div class="col-sm-10">
-				<div ng-repeat="product in vm.collection.products">
+				<div ng-repeat="product in vm.products">
 					<div class="col-sm-3">
 						<a href="#/collection/{{product.id}}" class="thumbnail">
 							<img src="{{product.src}}" alt="{{product.alt}}"/>
@@ -15,9 +15,8 @@
 		</section>
 		<section id="thumbnails" class="hidden-xs">
 			<div class="col-sm-2">
-				<div class="col-sm-6" ng-repeat="thumbnail in vm.collection.thumbnails">
+				<div class="col-sm-6" ng-repeat="thumbnail in vm.thumbnails">
 					<a href="#/collection/{{thumbnail.id}}" class="thumbnail">
-						<!--<img src="{{thumbnail.src}}" alt="{{thumbnail.alt}}" ng-class-odd="'thumbnailleft'" ng-class-even="'thumbnailright'"/>-->
 						<img src="{{thumbnail.src}}" alt="{{thumbnail.alt}}" ng-class="$index % 2 == 0 && 'thumbnailleft' || 'thumbnailright'">
 					</a>
 				</div>

@@ -7,15 +7,24 @@
 	CollectionService.$inject = ["$http", "$q", "$timeout"];
 
 	function CollectionService($http, $q, $timeout) {
-		this.getData = getData;
+		this.getThumbnails = getThumbnails;
+		this.getProducts = getProducts;
+
+		//function getProducts() {
+		//	return $http.get("/api/products");
+		//}
+
+		//function getThumbnails() {
+		//	return $http.get("/api/thumbnails");
+		//}
 
 		// return a promise (like what $http returns)
-		function getData(eventId) {
+		function getProducts() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
-				deferred.resolve({
-					products: [
+				deferred.resolve(
+					[
 						{
 							id: "1",
 							name: "Black Swing Dress - £65",
@@ -100,8 +109,20 @@
 							src: "app/assets/images/collections/Black Playsuit/isaac_ava_black_playsuit_2.jpg",
 							alt: "Black Playsuit"
 						}
-					],
-					thumbnails: [
+					]
+				);
+			}, 500);
+
+			return deferred.promise;
+		}
+
+
+		function getThumbnails() {
+			var deferred = $q.defer();
+
+			$timeout(function () {
+				deferred.resolve(
+					[
 						{
 							id: "1",
 							src: "app/assets/images/collections/Black Swing Dress/isaac_ava_black_swing_dress_1.jpg",
@@ -173,14 +194,10 @@
 							alt: "Black Playsuit"
 						}
 					]
-				});
+				);
 			}, 500);
 
 			return deferred.promise;
 		}
-
-		//function getData() {
-		//    return $http.get("http://localhost:51029/api/workout");
-		//}
 	}
 })();
