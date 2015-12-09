@@ -4,7 +4,7 @@
 			<div class="col-sm-3">
 				<div class="col-sm-6" ng-repeat="image in vm.product.images track by $index">
 					<a href="javascript:;" class="thumbnail">
-						<img src="{{image.src}}" alt="{{image.alt}}" ng-click="vm.changeImage($index)"/>
+						<img ng-src="{{image.src}}" alt="{{image.alt}}" ng-click="vm.changeImage($index)"/>
 					</a>
 				</div>
 			</div>
@@ -39,7 +39,7 @@
 			<div class="col-sm-2">
 				<div class="col-sm-6" ng-repeat="thumbnail in vm.thumbnails">
 					<a href="#/collection/{{thumbnail.id}}" class="thumbnail">
-						<img src="{{thumbnail.src}}" alt="{{thumbnail.alt}}"/>
+						<img ng-src="{{thumbnail.src}}" alt="{{thumbnail.alt}}"/>
 					</a>
 				</div>
 			</div>
