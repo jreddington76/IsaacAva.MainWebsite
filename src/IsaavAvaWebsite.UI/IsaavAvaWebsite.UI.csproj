@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\home\home.service.js" />
     <Content Include="app\thumbnail.service.js" />
     <Content Include="scripts\angular-route.min.js.map" />
     <Content Include="scripts\angular.min.js.map" />

@@ -15,11 +15,18 @@
 		activate();
 
 		function activate() {
-
 			eventsService.getEvents()
 				.then(function(data) {
 					vm.events = data;
 				});
 		}
+
+		//api
+		//function activate() {
+		//	eventsService.getEvents()
+		//		.then(function (response) {
+		//			vm.events = response.data;
+		//		});
+		//}
 	}
 })();

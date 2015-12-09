@@ -4,6 +4,7 @@
 		.module("app")
 		.service("ThumbnailService", ThumbnailService);
 
+	// todo - $q and $timeout can be removed when Web API used
 	ThumbnailService.$inject = ["$http", "$q", "$timeout"];
 
 	function ThumbnailService($http, $q, $timeout) {
@@ -13,6 +14,7 @@
 		//	return $http.get("/api/thumbnails");
 		//}
 
+		// return a promise (like what $http returns)
 		function getThumbnails() {
 			var deferred = $q.defer();
 
