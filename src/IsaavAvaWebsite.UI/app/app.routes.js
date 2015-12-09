@@ -17,7 +17,7 @@
 						templateUrl: "app/collection/collection.html",
 						controllerAs: "vm"
 					})
-					.when("/collection/:itemId", {
+					.when("/collection/:productId", {
 						controller: "ItemController",
 						templateUrl: "app/item/item.html",
 						controllerAs: "vm"
@@ -36,11 +36,11 @@
 						templateUrl: "app/events/events.html",
 						controllerAs: "vm"
 					})
-					.when("/events/:eventId", {
-						controller: "EventController",
-						templateUrl: "app/event/event.html",
-						controllerAs: "vm"
-					})
+					//.when("/events/:eventId", {
+					//	controller: "EventController",
+					//	templateUrl: "app/event/event.html",
+					//	controllerAs: "vm"
+					//})
 					.when("/press", {
 						templateUrl: "app/press/press.html"
 					})

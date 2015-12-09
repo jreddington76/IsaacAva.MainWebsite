@@ -4,6 +4,7 @@
 		.module("app")
 		.service("CollectionService", CollectionService);
 
+	// todo - $q and $timeout can be removed when Web API used
 	CollectionService.$inject = ["$http", "$q", "$timeout"];
 
 	function CollectionService($http, $q, $timeout) {

@@ -10,16 +10,24 @@
 	function EventController($routeParams, eventService) {
 		var vm = this;
 
-		vm.details = [];
+		vm.event = [];
 
 		activate();
 
 		function activate() {
 
-			eventService.getData($routeParams.eventId)
+			eventService.getEvent($routeParams.eventId)
 				.then(function(data) {
-					vm.details = data;
+					vm.event = data;
 				});
 		}
+
+		// api 
+		//function activate() {
+		//	eventService.getEvent()
+		//		.then(function (response) {
+		//			vm.event = response.data;
+		//		});
+		//}
 	}
 })();

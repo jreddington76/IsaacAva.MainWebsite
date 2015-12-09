@@ -4,19 +4,23 @@
 		.module("app")
 		.service("EventService", EventService);
 
-	// $q and $timeout can be removed when Web API used
+	// todo - $q and $timeout can be removed when Web API used
 	EventService.$inject = ["$http", "$q", "$timeout"];
 
 	function EventService($http, $q, $timeout) {
-		this.getData = getData;
+		this.getEvent = getEvent;
+
+		//function getEvent(eventId) {
+		//	return $http.get("/api/events/" + eventId);
+		//}
 
 		// return a promise (like what $http returns)
-		function getData(eventId) {
+		function getEvent(eventId) {
 			var deferred = $q.defer();
 
 			$timeout(function() {
 				deferred.resolve({
-					name: "Event 1",
+					name: "Event " + eventId,
 					images: [
 						{ src: "app/assets/images/isaac_ava_homepage_" + eventId + ".jpg" }
 					]
@@ -25,10 +29,5 @@
 
 			return deferred.promise;
 		};
-
-
-		//function getData(exerciseId) {
-		//    return $http.get("http://localhost:51029/api/exercisestep/" + exerciseId);
-		//}
 	}
 })();

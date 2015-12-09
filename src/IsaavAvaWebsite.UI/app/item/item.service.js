@@ -8,69 +8,73 @@
 	ItemService.$inject = ["$http", "$q", "$timeout"];
 
 	function ItemService($http, $q, $timeout) {
-		this.getData = getData;
+		this.getProduct = getProduct;
+
+		//function getProduct(productId) {
+		//	return $http.get("/api/products/" + productId);
+		//}
 
 		// return a promise (like what $http returns)
-		function getData(eventId) {
-			if (eventId === "1") {
-				return getData1(eventId);
+		function getProduct(productId) {
+			if (productId === "1") {
+				return getData1();
 			}
 
-			if (eventId === "2") {
-				return getData2(eventId);
+			if (productId === "2") {
+				return getData2();
 			}
 
-			if (eventId === "3") {
-				return getData3(eventId);
+			if (productId === "3") {
+				return getData3();
 			}
 
-			if (eventId === "4") {
-				return getData4(eventId);
+			if (productId === "4") {
+				return getData4();
 			}
 
-			if (eventId === "5") {
-				return getData5(eventId);
+			if (productId === "5") {
+				return getData5();
 			}
 
-			if (eventId === "6") {
-				return getData6(eventId);
+			if (productId === "6") {
+				return getData6();
 			}
 
-			if (eventId === "7") {
-				return getData7(eventId);
+			if (productId === "7") {
+				return getData7();
 			}
 
-			if (eventId === "8") {
-				return getData8(eventId);
+			if (productId === "8") {
+				return getData8();
 			}
 
-			if (eventId === "9") {
-				return getData9(eventId);
+			if (productId === "9") {
+				return getData9();
 			}
 
-			if (eventId === "10") {
-				return getData10(eventId);
+			if (productId === "10") {
+				return getData10();
 			}
 
-			if (eventId === "11") {
-				return getData11(eventId);
+			if (productId === "11") {
+				return getData11();
 			}
 
-			if (eventId === "12") {
-				return getData12(eventId);
+			if (productId === "12") {
+				return getData12();
 			}
 
-			if (eventId === "13") {
-				return getData13(eventId);
+			if (productId === "13") {
+				return getData13();
 			}
 
-			if (eventId === "14") {
-				return getData14(eventId);
+			if (productId === "14") {
+				return getData14();
 			}
 		}
 
 
-		function getData1(eventId) {
+		function getData1() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -102,7 +106,7 @@
 			return deferred.promise;
 		};
 
-		function getData2(eventId) {
+		function getData2() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -134,7 +138,7 @@
 			return deferred.promise;
 		};
 
-		function getData3(eventId) {
+		function getData3() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -166,7 +170,7 @@
 			return deferred.promise;
 		};
 
-		function getData4(eventId) {
+		function getData4() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -198,7 +202,7 @@
 			return deferred.promise;
 		};
 
-		function getData5(eventId) {
+		function getData5() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -222,7 +226,7 @@
 			return deferred.promise;
 		};
 
-		function getData6(eventId) {
+		function getData6() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -250,7 +254,7 @@
 			return deferred.promise;
 		};
 
-		function getData7(eventId) {
+		function getData7() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -282,7 +286,7 @@
 			return deferred.promise;
 		};
 
-		function getData8(eventId) {
+		function getData8() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -314,7 +318,7 @@
 			return deferred.promise;
 		};
 
-		function getData9(eventId) {
+		function getData9() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -342,7 +346,7 @@
 			return deferred.promise;
 		};
 
-		function getData10(eventId) {
+		function getData10() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -370,7 +374,7 @@
 			return deferred.promise;
 		};
 
-		function getData11(eventId) {
+		function getData11() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -398,7 +402,7 @@
 			return deferred.promise;
 		};
 
-		function getData12(eventId) {
+		function getData12() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -426,7 +430,7 @@
 			return deferred.promise;
 		};
 
-		function getData13(eventId) {
+		function getData13() {
 			var deferred = $q.defer();
 
 			$timeout(function() {
@@ -458,7 +462,7 @@
 			return deferred.promise;
 		};
 
-		function getData14(eventId) {
+		function getData14() {
 			var deferred = $q.defer();
 
 			$timeout(function() {

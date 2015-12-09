@@ -10,7 +10,7 @@
 	function ItemController($routeParams, itemService, thumbnailService) {
 		var vm = this;
 
-		vm.item = [];
+		vm.product = [];
 		vm.thumbnails = [];
 		vm.index = 0;
 		vm.changeImage = changeImage;
@@ -19,9 +19,9 @@
 
 		function activate() {
 
-			itemService.getData($routeParams.itemId)
+			itemService.getProduct($routeParams.productId)
 				.then(function(data) {
-					vm.item = data;
+					vm.product = data;
 				});
 
 			thumbnailService.getThumbnails()
@@ -32,9 +32,9 @@
 
 		// api 
 		//function activate() {
-		//	itemService.getData($routeParams.itemId)
+		//	itemService.getProduct($routeParams.productId)
 		//		.then(function (response) {
-		//			vm.products = response.data;
+		//			vm.product = response.data;
 		//		});
 
 		//	thumbnailService.getThumbnails()

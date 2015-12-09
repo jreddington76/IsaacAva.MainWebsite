@@ -2,7 +2,7 @@
 	<div class="row">
 		<section id="productimage">
 			<div class="col-sm-3">
-				<div class="col-sm-6" ng-repeat="image in vm.item.images track by $index">
+				<div class="col-sm-6" ng-repeat="image in vm.product.images track by $index">
 					<a href="javascript:;" class="thumbnail">
 						<img src="{{image.src}}" alt="{{image.alt}}" ng-click="vm.changeImage($index)"/>
 					</a>
@@ -12,14 +12,14 @@
 		<section id="largeimage" class="hidden-xs">
 			<div class="col-sm-4">
 				<div class="thumbnail">
-					<img id="fullimage" ng-src="{{vm.item.images[vm.index].src}}"/>
+					<img id="fullimage" ng-src="{{vm.product.images[vm.index].src}}"/>
 				</div>
 			</div>
 		</section>
 		<section id="imagedetails">
 			<div class="col-sm-3">
-				<h2>{{vm.item.description}}</h2>
-				<h3>£{{vm.item.price}}</h3>
+				<h2>{{vm.product.description}}</h2>
+				<h3>£{{vm.product.price}}</h3>
 				<h4>SIZES AVAILABLE</h4>
 				<div class="btn-group btn-group-sm" role="toolbar" aria-label="sizes">
 					<button type="button" class="btn btn-default disabled">6</button>
@@ -31,7 +31,7 @@
 					<button type="button" class="btn btn-default disabled">18</button>
 				</div>
 				<br/>
-				<a href="{{vm.item.link}}" class="btn btn-default btn-lg" target="_blank">SHOP</a>
+				<a href="{{vm.product.link}}" class="btn btn-default btn-lg" target="_blank">SHOP</a>
 				<div class="fb-like" data-href="https://www.facebook.com/IsaacAvaDesigns" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 			</div>
 		</section>

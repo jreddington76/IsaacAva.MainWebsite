@@ -16,7 +16,7 @@
 
 		function activate() {
 
-			eventsService.getData()
+			eventsService.getEvents()
 				.then(function(data) {
 					vm.events = data;
 				});
