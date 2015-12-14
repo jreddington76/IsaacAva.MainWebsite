@@ -1,21 +1,25 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using IsaacAvaWebsite.Domain;
+using IsaacAvaWebsite.Domain.DTO;
 using IsaacAvaWebsite.Interfaces;
 
 namespace IsaacAvaWebsite.Services
 {
-	public class EventService
+	public class EventService : IEventService
 	{
+		private readonly IEventMapper _eventMapper;
 		private readonly IUnitOfWork _unitOfWork;
 
-		public EventService(IUnitOfWork unitOfWork)
+		public EventService(IUnitOfWork unitOfWork, IEventMapper eventMapper)
 		{
 			_unitOfWork = unitOfWork;
+			_eventMapper = eventMapper;
 		}
 
-		public void GetEvents()
+		public IEnumerable<EventDto> GetEvents()
 		{
-			_unitOfWork.EventRepository().GetAll();
+			var events = _unitOfWork.EventRepository().GetAll();
+			return _eventMapper.MapEvents(events);
 		}
 
 		public void AddEvent(Event eventObj)

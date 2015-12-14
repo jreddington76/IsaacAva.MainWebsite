@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="IEventMapper.cs" />
     <Compile Include="IEventRepository.cs" />
+    <Compile Include="IEventService.cs" />
     <Compile Include="IGenericRepository.cs" />
     <Compile Include="IProductMapper.cs" />
     <Compile Include="IProductRepository.cs" />
