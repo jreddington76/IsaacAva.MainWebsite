@@ -52,6 +52,8 @@ namespace IsaacAvaWebsite.API
 			kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
 			kernel.Bind<IProductService>().To<ProductService>();
 			kernel.Bind<IProductMapper>().To<ProductMapper>();
+			kernel.Bind<IEventService>().To<EventService>();
+			kernel.Bind<IEventMapper>().To<EventMapper>();
 			return kernel;
 		}
 	}
