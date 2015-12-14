@@ -9,10 +9,16 @@ namespace IsaacAvaWebsite.Services
 		private readonly IsaacAvaContext _context = new IsaacAvaContext();
 		private bool _disposed;
 		private IProductRepository _productRepository;
+		private IEventRepository _eventRepository;
 
 		public IProductRepository ProductRepository()
 		{
 			return _productRepository ?? (_productRepository = new ProductRepository(_context));
+		}
+
+		public IEventRepository EventRepository()
+		{
+			return _eventRepository ?? (_eventRepository = new EventRepository(_context));
 		}
 
 		public void Dispose()

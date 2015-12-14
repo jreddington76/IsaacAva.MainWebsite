@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IEventMapper.cs" />
+    <Compile Include="IEventRepository.cs" />
     <Compile Include="IGenericRepository.cs" />
     <Compile Include="IProductMapper.cs" />
     <Compile Include="IProductRepository.cs" />

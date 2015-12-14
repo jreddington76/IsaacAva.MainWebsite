@@ -39,8 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\EventDto.cs" />
     <Compile Include="DTO\ImageDto.cs" />
     <Compile Include="DTO\ProductDto.cs" />
+    <Compile Include="Event.cs" />
     <Compile Include="Image.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
