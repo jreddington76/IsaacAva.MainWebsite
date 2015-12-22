@@ -5,7 +5,7 @@ using Microsoft.AspNet.Identity;
 
 namespace IsaacAvaWebsite.API.Controllers
 {
-	[RoutePrefix("api/Account")]
+	//[RoutePrefix("Account")]
 	public class AccountController : ApiController
 	{
 		private readonly AuthRepository _repo;
@@ -17,7 +17,7 @@ namespace IsaacAvaWebsite.API.Controllers
 
 		// POST api/Account/Register
 		[AllowAnonymous]
-		[Route("Register")]
+		//[Route("Register")]
 		public async Task<IHttpActionResult> Register(UserModel userModel)
 		{
 			if (!ModelState.IsValid)

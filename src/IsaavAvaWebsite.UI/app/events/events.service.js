@@ -37,8 +37,8 @@
 					{
 						id: "3",
 						image: "app/assets/images/events/3_Battle_of_the_fashion_designers.jpg",
-						alt: "Battle of the Fashion Desginers 2015",
-						copy: "<p>9th October 2015<br/><strong>Battle of the Fashion Desginers</strong><br/>WINNER</p>",
+						alt: "Battle of the Fashion Designers 2015",
+						copy: "<p>9th October 2015<br/><strong>Battle of the Fashion Designers</strong><br/>WINNER</p>",
 						link: "http://www.eventbrite.co.uk/e/textile-fever-fashion-show-tickets-18704211801"
 					},
 					{

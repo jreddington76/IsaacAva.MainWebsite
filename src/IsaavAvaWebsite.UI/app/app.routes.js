@@ -36,6 +36,16 @@
 						templateUrl: "app/events/events.html",
 						controllerAs: "vm"
 					})
+					.when("/signup", {
+						controller: "SignupController",
+						templateUrl: "app/auth/signup.html",
+						controllerAs: "vm"
+					})
+					.when("/login", {
+						controller: "LoginController",
+						templateUrl: "app/auth/login.html",
+						controllerAs: "vm"
+					})
 					//.when("/events/:eventId", {
 					//	controller: "EventController",
 					//	templateUrl: "app/event/event.html",

@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlogEntry.cs" />
     <Compile Include="DTO\EventDto.cs" />
     <Compile Include="DTO\ImageDto.cs" />
     <Compile Include="DTO\ProductDto.cs" />

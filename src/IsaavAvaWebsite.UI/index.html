@@ -33,7 +33,7 @@
 <body ng-app="app">
 	<div id="fb-root"></div>
 	<script>
-		(function(d, s, id) {
+		(function (d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementById(id)) return;
 			js = d.createElement(s);
@@ -54,6 +54,7 @@
 
 	<script src="scripts/angular.min.js"></script>
 	<script src="scripts/angular-route.min.js"></script>
+	<script src="app/assets/angular-local-storage.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-sanitize.min.js"></script>
 
@@ -70,5 +71,11 @@
 	<script src="app/events/events.service.js"></script>
 	<script src="app/event/event.controller.js"></script>
 	<script src="app/event/event.service.js"></script>
+
+	<script src="app/auth/authinterceptor.service.js"></script>
+	<script src="app/auth/auth.service.js"></script>
+	<script src="app/auth/login.controller.js"></script>
+	<script src="app/auth/signup.controller.js"></script>
+	<script src="app/app.interceptors.js"></script>
 </body>
 </html>
