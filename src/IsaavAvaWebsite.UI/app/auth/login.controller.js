@@ -17,7 +17,7 @@
 
 		$scope.login = function () {
 			authService.login($scope.loginData).then(function (response) {
-				$location.path('/orders');
+				$location.path('/admin');
 			},
 			function (err) {
 				$scope.message = err.error_description;

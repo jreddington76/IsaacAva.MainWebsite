@@ -59,10 +59,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\admin\admin.controller.js" />
+    <Content Include="app\admin\admin.html" />
+    <Content Include="app\admin\admin.service.js" />
     <Content Include="app\app.interceptors.js" />
     <Content Include="app\assets\angular-local-storage.js" />
     <Content Include="app\auth\auth.service.js" />
     <Content Include="app\auth\authinterceptor.service.js" />
+    <Content Include="app\auth\http.auth.interceptor.js" />
     <Content Include="app\auth\login.controller.js" />
     <Content Include="app\auth\login.html" />
     <Content Include="app\auth\signup.controller.js" />
@@ -184,6 +188,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

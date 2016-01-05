@@ -46,11 +46,11 @@
 						templateUrl: "app/auth/login.html",
 						controllerAs: "vm"
 					})
-					//.when("/events/:eventId", {
-					//	controller: "EventController",
-					//	templateUrl: "app/event/event.html",
-					//	controllerAs: "vm"
-					//})
+					.when("/admin", {
+						controller: "AdminController",
+						templateUrl: "app/admin/admin.html",
+						controllerAs: "vm"
+					})
 					.when("/press", {
 						templateUrl: "app/press/press.html"
 					})
