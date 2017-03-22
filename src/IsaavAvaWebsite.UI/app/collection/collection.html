@@ -5,7 +5,7 @@
 				<div ng-repeat="product in vm.collection.products">
 					<div class="col-sm-3">
 						<a href="#/collection/{{product.id}}" class="thumbnail">
-							<img src="{{product.src}}" alt="{{product.alt}}"/>
+							<img ng-src="{{product.src}}" alt="{{product.alt}}"/>
 							<p>{{product.name}}</p>
 						</a>
 					</div>
@@ -17,8 +17,7 @@
 			<div class="col-sm-2">
 				<div class="col-sm-6" ng-repeat="thumbnail in vm.collection.thumbnails">
 					<a href="#/collection/{{thumbnail.id}}" class="thumbnail">
-						<!--<img src="{{thumbnail.src}}" alt="{{thumbnail.alt}}" ng-class-odd="'thumbnailleft'" ng-class-even="'thumbnailright'"/>-->
-						<img src="{{thumbnail.src}}" alt="{{thumbnail.alt}}" ng-class="$index % 2 == 0 && 'thumbnailleft' || 'thumbnailright'">
+						<img ng-src="{{thumbnail.src}}" alt="{{thumbnail.alt}}" ng-class="$index % 2 == 0 && 'thumbnailleft' || 'thumbnailright'">
 					</a>
 				</div>
 			</div>
