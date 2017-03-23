@@ -23,6 +23,7 @@ $RECYCLE.BIN/
 
 
 /packages/
+/.vs/
 
 #now using Automatic Package Restore so don't need repositories.config
 #!packages/repositories.config

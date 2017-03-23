@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.API", "src\IsaacAvaWebsite.API\IsaacAvaWebsite.API.csproj", "{421CE4F2-3E0D-48CF-AFEA-CDD5E60C7593}"
 EndProject
@@ -18,6 +18,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsaacAvaWebsite.Interfaces", "src\IsaacAvaWebsite.Interfaces\IsaacAvaWebsite.Interfaces.csproj", "{69E499D8-68F8-4AE5-803B-76862DE80613}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{417803F3-C2B2-4287-A7AB-EE7D992D0DC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{900472B7-2C7F-48FD-BDA0-74ACCC55165B}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
