@@ -1,0 +1,35 @@
+﻿.navbar-default
+{
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-brand
+{
+    float: none;
+    padding: 0;
+}
+
+    .navbar-brand > img
+    {
+        height: 40px;
+        margin: 5px;
+        width: 200px;
+    }
+
+.nav-justified
+{
+    margin-top: 10px;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover
+{
+    background-color: inherit;
+}
+
+.nav-justified > li > a:hover,
+.nav-justified > li > a:focus
+{
+    background-color: transparent;
+}

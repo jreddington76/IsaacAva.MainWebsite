@@ -73,6 +73,14 @@
     <Content Include="app\home\home.service.js" />
     <Content Include="app\core\services\thumbnail.service.js" />
     <Content Include="app\auth\signup.html" />
+	<Content Include="app\assets\templates\footer.html" />
+    <Content Include="app\assets\templates\social.html" />
+    <Content Include="app\directives\siteheader.directive.js" />
+    <Content Include="app\directives\social.directive.js" />
+    <Content Include="app\directives\sitefooter.directive.js" />
+    <Content Include="css\footer.css" />
+    <Content Include="css\header.css" />
+    <Content Include="favicon.ico" />
     <Content Include="scripts\angular-route.min.js.map" />
     <Content Include="scripts\angular.min.js.map" />
     <Content Include="packages.config" />
@@ -148,7 +156,7 @@
     <Content Include="app\assets\images\Liverpool_fashion_week_logo.jpg" />
     <Content Include="app\assets\images\logo.png" />
     <Content Include="app\assets\images\lookbook\Isaac_Ava_Banner.jpg" />
-    <Content Include="app\assets\navs\nav.html" />
+    <Content Include="app\assets\templates\header.html" />
     <Content Include="app\collection\collection.controller.js" />
     <Content Include="app\collection\collection.html" />
     <Content Include="app\collection\collection.service.js" />
@@ -192,6 +200,9 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
