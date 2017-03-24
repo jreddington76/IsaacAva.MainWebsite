@@ -73,7 +73,7 @@
     <Content Include="app\home\home.service.js" />
     <Content Include="app\core\services\thumbnail.service.js" />
     <Content Include="app\auth\signup.html" />
-	<Content Include="app\assets\templates\footer.html" />
+    <Content Include="app\assets\templates\footer.html" />
     <Content Include="app\assets\templates\social.html" />
     <Content Include="app\directives\siteheader.directive.js" />
     <Content Include="app\directives\social.directive.js" />
@@ -177,7 +177,6 @@
     <Content Include="app\journal\blog.html" />
     <Content Include="app\journal\journal.html" />
     <Content Include="app\lookbook\lookbook.html" />
-    <Content Include="app\press\press.html" />
     <Content Include="app\story\story.html" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\site.css" />

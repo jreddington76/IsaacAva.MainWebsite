@@ -51,9 +51,6 @@
 						templateUrl: "app/admin/admin.html",
 						controllerAs: "vm"
 					})
-					.when("/press", {
-						templateUrl: "app/press/press.html"
-					})
 					.when("/contact", {
 						templateUrl: "app/contact/contact.html"
 					})
