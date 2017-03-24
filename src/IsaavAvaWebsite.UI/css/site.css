@@ -10,6 +10,11 @@ h2
     color: #bbb;
 }
 
+.large-img
+{
+    height: 500px;
+}
+
 /* home */
 
 #social a i
@@ -257,14 +262,6 @@ h4
 #shopbutton
 {
     margin-top: 20px;
-}
-
-
-/* story */
-
-.story img
-{
-    height: 500px;
 }
 
 
