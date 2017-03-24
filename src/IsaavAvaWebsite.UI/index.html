@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="css/site.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
 
     <script>
@@ -44,11 +45,11 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>-->
 
-    <div ng-include src="'app/assets/navs/nav.html'"></div>
+    <ia-site-header></ia-site-header>
 
     <div ng-view></div>
 
-    <div ng-include src="'app/assets/navs/footer.html'"></div>
+    <ia-site-footer></ia-site-footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -69,5 +70,8 @@
     <script src="app/events/events.service.js"></script>
     <script src="app/event/event.controller.js"></script>
     <script src="app/event/event.service.js"></script>
+    <script src="app/directives/social.directive.js"></script>
+    <script src="app/directives/siteheader.directive.js"></script>
+    <script src="app/directives/sitefooter.directive.js"></script>
 </body>
 </html>
