@@ -1,0 +1,7 @@
+﻿<section id="thumbnails" class="col-sm-2 hidden-xs">
+        <div class="col-sm-6" ng-repeat="thumbnail in vm1.thumbnails">
+            <a href="#/collection/{{thumbnail.id}}" class="thumbnail">
+                <img ng-src="{{thumbnail.src}}" alt="{{thumbnail.alt}}" ng-class="$index % 2 == 0 && 'thumbnailleft' || 'thumbnailright'">
+            </a>
+        </div>
+</section>

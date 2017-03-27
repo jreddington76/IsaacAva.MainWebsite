@@ -1,4 +1,4 @@
-﻿<div class="container">
+﻿<div class="container-fluid">
 	<div class="row">
 		<section id="maincontent">
 			<div class="col-sm-10">
@@ -13,14 +13,6 @@
 				</div>
 			</div>
 		</section>
-		<section id="thumbnails" class="hidden-xs">
-			<div class="col-sm-2">
-				<div class="col-sm-6" ng-repeat="thumbnail in vm.thumbnails">
-					<a href="#/collection/{{thumbnail.id}}" class="thumbnail">
-						<img ng-src="{{thumbnail.src}}" alt="{{thumbnail.alt}}" ng-class="$index % 2 == 0 && 'thumbnailleft' || 'thumbnailright'">
-					</a>
-				</div>
-			</div>
-		</section>
+		<ia-thumbnail></ia-thumbnail>
 	</div>
 </div>
