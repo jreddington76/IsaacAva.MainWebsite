@@ -1,40 +1,35 @@
 ﻿<div id="product" class="container-fluid">
-	<div class="row">
-		<section id="productimage">
-			<div class="col-sm-3">
-				<div class="col-sm-6" ng-repeat="image in vm.product.images track by $index">
-					<a href="javascript:;" class="thumbnail">
-						<img ng-src="{{image.src}}" alt="{{image.alt}}" ng-click="vm.changeImage($index)"/>
-					</a>
-				</div>
-			</div>
-		</section>
-		<section id="largeimage" class="hidden-xs">
-			<div class="col-sm-4">
-				<div class="thumbnail">
-					<img id="fullimage" ng-src="{{vm.product.images[vm.index].src}}"/>
-				</div>
-			</div>
-		</section>
-		<section id="imagedetails">
-			<div class="col-sm-3">
-				<h2>{{vm.product.description}}</h2>
-				<h3>£{{vm.product.price}}</h3>
-				<h4>SIZES AVAILABLE</h4>
-				<div class="btn-group btn-group-sm" role="toolbar" aria-label="sizes">
-					<button type="button" class="btn btn-default disabled">6</button>
-					<button type="button" class="btn btn-default disabled">8</button>
-					<button type="button" class="btn btn-default disabled">10</button>
-					<button type="button" class="btn btn-default disabled">12</button>
-					<button type="button" class="btn btn-default disabled">14</button>
-					<button type="button" class="btn btn-default disabled">16</button>
-					<button type="button" class="btn btn-default disabled">18</button>
-				</div>
-				<br/>
-				<a href="{{vm.product.link}}" class="btn btn-default btn-lg" target="_blank">SHOP</a>
-				<div class="fb-like" data-href="https://www.facebook.com/IsaacAvaDesigns" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-			</div>
-		</section>
+    <div class="row">
+        <section id="productimage">
+            <div class="col-sm-3">
+                <div class="col-sm-6" ng-repeat="image in vm.item.images track by $index">
+                    <a href="javascript:;" class="thumbnail">
+                        <img ng-src="{{image.src}}" alt="{{image.alt}}" ng-click="vm.changeImage($index)" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="largeimage" class="hidden-xs">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img id="fullimage" ng-src="{{vm.item.images[vm.index].src}}" />
+                </div>
+            </div>
+        </section>
+        <section id="imagedetails">
+            <div class="col-sm-3">
+                <h2>{{vm.item.description}}</h2>
+                <h3>£{{vm.item.price}}</h3>
+                <h4>SIZES AVAILABLE</h4>
+                <div class="btn-group btn-group-sm" role="toolbar" aria-label="sizes">
+                    <button type="button" ng-repeat="size in vm.item.sizes" class="btn btn-default disabled">{{size}}</button>
+                </div>
+                <br />
+                <a href="{{vm.item.link}}" class="btn btn-default btn-lg" target="_blank">SHOP</a>
+                <br />
+                <div class="fb-like facebook" data-href="https://www.facebook.com/IsaacAvaDesigns" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+            </div>
+        </section>
         <ia-thumbnail></ia-thumbnail>
-	</div>
+    </div>
 </div>
