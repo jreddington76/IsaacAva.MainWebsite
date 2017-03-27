@@ -1,0 +1,20 @@
+﻿.btn.disabled
+{
+    cursor: default;
+    width: 35px;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus
+{
+    outline: 0;
+}
+
+h4
+{
+    margin-top: 50px;
+}
+
+#shopbutton
+{
+    margin-top: 20px;
+}

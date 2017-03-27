@@ -70,6 +70,7 @@
     <Content Include="app\thumbnails\thumbnail.service.js" />
     <Content Include="css\footer.css" />
     <Content Include="css\header.css" />
+    <Content Include="css\item.css" />
     <Content Include="favicon.ico" />
     <Content Include="scripts\angular-route.min.js.map" />
     <Content Include="scripts\angular.min.js.map" />
