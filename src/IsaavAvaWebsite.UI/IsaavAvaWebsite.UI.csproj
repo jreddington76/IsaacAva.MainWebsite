@@ -62,8 +62,12 @@
     <Content Include="app\assets\templates\footer.html" />
     <Content Include="app\assets\templates\social.html" />
     <Content Include="app\directives\siteheader.directive.js" />
+    <Content Include="app\directives\thumbnail.directive.js" />
     <Content Include="app\directives\social.directive.js" />
     <Content Include="app\directives\sitefooter.directive.js" />
+    <Content Include="app\thumbnails\thumbnail.controller.js" />
+    <Content Include="app\thumbnails\thumbnail.html" />
+    <Content Include="app\thumbnails\thumbnail.service.js" />
     <Content Include="css\footer.css" />
     <Content Include="css\header.css" />
     <Content Include="favicon.ico" />
